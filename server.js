@@ -15,6 +15,30 @@ connection.connect((err) => {
     console.log(`connected as id: ${connection.threadId}`);
 });
 
+
+function departmentView() {
+    var sqlStr = "SELECT * FROM department";
+    connection.query(sqlStr, function (err, result) {
+        if (err) throw err;
+
+        console.table(result)
+        runSearch();
+    })
+}
+
+function employeeView() {
+    var sqlStr = "SELECT first_name, last_name, title, salary FROM employee ";
+    sqlStr += "LEFT JOIN role ";
+    sqlStr += "ON employee.role_id = role.id"
+    connection.query(sqlStr, function (err, result) {
+        if (err) throw err;
+
+        console.table(result)
+        runSearch();
+    })
+}
+
+
 // 1.Hard code queries in MySql workbench
 // 2. Bring queries in and add into functions 
 // 3. Test each function individually 
