@@ -9,3 +9,8 @@ const connection = mysql.createConnection({
     password: "Savannah20",
     database: "employee_tracker"
 });
+
+connection.connect((err) => {
+    if (err) throw err;
+    console.log(`connected as id: ${connection.threadId}`);
+});
