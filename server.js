@@ -26,13 +26,13 @@ const viewOptions = [
 ];
 
 const employeeOptions = [
-    "John Stamos",
-    "Mary Walters",
-    "George Washington",
-    "Meghan Kelly",
-    "Tom Hanks",
-    "Dolly Parton",
-    "Oprah Winfrey",
+    "Kamala Harris",
+    "Michelle Obama",
+    "Nina Simone",
+    "Issa Rae",
+    "Tameron Hall",
+    "Meghan Markle",
+    "Shonda Rhimes",
     "exit"
 ];
 
