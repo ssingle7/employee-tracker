@@ -38,6 +38,30 @@ function employeeView() {
     })
 }
 
+function roleView() {
+    var sqlStr = "SELECT * FROM role";
+    connection.query(sqlStr, function (err, result) {
+        if (err) throw err;
+
+        console.table(result)
+        runSearch();
+    })
+}
+
+const updateEmployee = () => {
+
+    function runUpdateSearch() {
+        inquirer
+            .prompt({
+                name: "action",
+                type: "list",
+                message: "Which employee do you want to update?",
+                choices: employeeOptions
+            })
+           
+    }
+    runUpdateSearch();  
+}
 
 // 1.Hard code queries in MySql workbench
 // 2. Bring queries in and add into functions 
