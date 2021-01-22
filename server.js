@@ -15,6 +15,40 @@ connection.connect((err) => {
     console.log(`connected as id: ${connection.threadId}`);
 });
 
+runSearch();
+
+// function runSearch() {
+//     inquirer
+//         .prompt({
+//             name: "action",
+//             type: "list",
+//             message: "What would you like to do?",
+//             choices: viewOptions
+//         })
+//         .then(function (answer) {
+//             switch (answer.action) {
+//                 case viewOptions[0]:
+//                     departmentView();
+//                     break;
+
+//                 case viewOptions[1]:
+//                     roleView();
+//                     break;
+
+//                 case viewOptions[2]:
+//                     employeeView();
+//                     break;
+
+//                 case viewOptions[3]:
+//                     updateEmployee();
+
+//                 case updateOptions[4]:
+//                     connection.end();
+//                     break
+//             }
+//         })
+// }
+
 
 function departmentView() {
     var sqlStr = "SELECT * FROM department";
