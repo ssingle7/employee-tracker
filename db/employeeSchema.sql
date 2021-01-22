@@ -31,3 +31,6 @@ constraint fk_manager_id FOREIGN KEY (manager_id) REFERENCES employee(id),
 Primary key(id)
 );
 
+select * from employee;
+select * from role;
+select * from department;
