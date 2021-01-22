@@ -15,6 +15,35 @@ connection.connect((err) => {
     console.log(`connected as id: ${connection.threadId}`);
 });
 
+module.exports = connection
+
+const viewOptions = [
+    "View Departments",
+    "View Roles",
+    "View Employees",
+    "Update Employee",
+    "exit"
+];
+
+const employeeOptions = [
+    "John Stamos",
+    "Mary Walters",
+    "George Washington",
+    "Meghan Kelly",
+    "Tom Hanks",
+    "Dolly Parton",
+    "Oprah Winfrey",
+    "exit"
+];
+
+const updateOptions = [
+    "First Name",
+    "Last Name",
+    "Role",
+    "exit"
+];
+
+
 runSearch();
 
 function runSearch() {
