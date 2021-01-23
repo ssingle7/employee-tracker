@@ -25,19 +25,19 @@ The purpose of this employee tracker application was to build a solution for man
 
 1. Clone the repo 
 
-  `git clone https://github.com/ssingle7/employee-tracker`
+   `git clone https://github.com/ssingle7/employee-tracker`
 
 2. Install dependencies 
 
-  `npm install`
+   `npm install`
 
-3. Create the database using the `databaseSeed.sql` and `employeeSchema.sql` 
+3. Create the database using the `databaseSeed.sql` and `employeeSchema.sql`
 
 4. Run Server 
 
 ## Preview 
 
-![EmployeeTracker](./employee-Tracker.gif)
+![EmployeeTracker](/employeeTracker.gif)
 
 ## Deployed Link
 
