@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql");
-const connection = require('./connection');
+// const connection = require('./connection');
 
 const connection = mysql.createConnection({
     host: "localhost",
@@ -139,6 +139,3 @@ const updateEmployee = () => {
 // 4. Incorporate inquirer.prompt to call these functions  
 // 5. Add additional inquirer prompts to take in user input 
 // 6. Modify the SQL queries to be dynamic 
-
-
-

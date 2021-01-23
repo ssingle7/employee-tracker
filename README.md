@@ -12,7 +12,6 @@ The purpose of this employee tracker application was to build a solution for man
 
   * Update employee roles
 
-
 * API routes were created to: read the `db.json` file and return all saved notes as JSON 
 
   * read the `db.json` file and return all saved notes as JSON.
