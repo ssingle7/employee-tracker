@@ -12,16 +12,12 @@ The purpose of this employee tracker application was to build a solution for man
 
   * Update employee roles
 
-* API routes were created to: read the `db.json` file and return all saved notes as JSON 
+* Used the MySQL package NPM package to connect to your MySQL database and perform queries. 
 
-  * read the `db.json` file and return all saved notes as JSON.
+* Used the Inquirer JS NPM package to interact with the user via the command-line.
 
-  * to receive a new note to save on the request body, and then return the new note to the client.
-
-  * to receive a query parameter containing the id of a note to delete. 
-  
-
- # Installation
+* Used the console.table to print MySQL rows to the console. There is a built-in version of `console.table`, but the NPM package formats the data a little better for our purposes.
+# Installation
 
 1. Clone the repo 
 
@@ -37,7 +33,7 @@ The purpose of this employee tracker application was to build a solution for man
 
 ## Preview 
 
-![EmployeeTracker](/employeeTracker.gif)
+![EmployeeTracker](./employeeTracker.gif)
 
 ## Deployed Link
 
